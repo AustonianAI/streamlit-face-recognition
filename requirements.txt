@@ -2,3 +2,4 @@ stremlit
 matplotlib
 numpy
 vecs
+face_recognition
