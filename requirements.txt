@@ -1,5 +1,6 @@
 streamlit
 matplotlib
+python-dotenv
 numpy
 vecs
 face_recognition
