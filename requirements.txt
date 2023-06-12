@@ -1,0 +1,4 @@
+stremlit
+matplotlib
+numpy
+vecs
