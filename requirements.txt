@@ -3,4 +3,4 @@ matplotlib
 python-dotenv
 numpy
 vecs
-face_recognition
+face_recognition @ git+https://github.com/AustonianAI/face_recognition
