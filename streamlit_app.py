@@ -79,7 +79,6 @@ def main():
         uploaded_image = upload_image()
 
     st.title("Who is your celebrity look-alike?")
-    st.text("Upload an image of yourself and we'll find your celebrity look-alike!")
 
     if uploaded_image:
         image = Image.open(uploaded_image)

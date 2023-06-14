@@ -4,3 +4,7 @@ python-dotenv
 numpy
 vecs
 face_recognition @ git+https://github.com/AustonianAI/face_recognition
+datasets
+flupy
+tqdm
+matplotlib
