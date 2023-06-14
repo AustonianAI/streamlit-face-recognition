@@ -83,15 +83,12 @@ def main():
 
     if uploaded_image:
         image = Image.open(uploaded_image)
-        image = resize_image(image, 150)
 
         sidebar.image(image, caption="Your image", use_column_width=True)
 
         similar_faces = find_similar_faces(image)
 
-        columns = col1, col2, col3 = st.columns(3)
-
-        column_count = 0
+        columns = st.columns(3)
 
         for idx, (id, metadata) in enumerate(similar_faces):
             name = metadata["name"]
@@ -101,10 +98,11 @@ def main():
 
             image_from_url = Image.open(
                 requests.get(image_url, stream=True).raw)
-            image_from_url = resize_image(image_from_url, 150)
+            # image_from_url = resize_image(image_from_url, 150)
 
             # Cycle through columns by using modulo operation
-            columns[idx % len(columns)].image(image_from_url, caption=name)
+            columns[idx % len(columns)].image(
+                image_from_url, caption=name, use_column_width=True)
 
 
 if __name__ == "__main__":
